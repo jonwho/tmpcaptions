@@ -1,0 +1,32 @@
+WEBVTT
+
+00:00.000 --> 00:02.000 position:10%,start line:10% size:80%
+FULL SCREEN TEST 1
+
+00:02.000 --> 00:04.000 position:10%,start line:10% size:80%
+fullscreen test 2
+center
+
+00:04.000 --> 00:06.000 position:10%,start line:10% size:80%
+♪ FullScreen TOP ♪
+
+00:06.000 --> 00:08.000 position:10%,start line:10% size:80%
+Two Lines
+Two Lines
+
+00:08.000 --> 00:10.000 position:10%,start line:10% size:80%
+Three lines
+Three lines
+Three lines
+
+00:10.000 --> 00:12.000 position:10%,start line:10% size:80%
+Four lines
+Four Lines
+Four lines
+
+00:12.000 --> 00:14.000 align:right position:10%,start line:10% size:80%
+Right
+
+00:14.000 --> 00:16.000 align:left position:10%,start line:10% size:80%
+Left
+
