@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--com.castlabs.drmtoday.encrypter dashencrypter 2.0.75-SNAPSHOT-->
+<!--isoparser-1.0.7.3-->
+<MPD profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" minBufferTime="PT5S" mediaPresentationDuration="PT1M" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:drmtoday="urn:mpeg:drmtdoday:cenc:2014">
+  <ProgramInformation moreInformationURL="www.castLabs.com"/>
+  <Period id="0" start="PT0S" duration="PT1M">
+    <AdaptationSet segmentAlignment="true" subsegmentAlignment="true" subsegmentStartsWithSAP="1" startWithSAP="1" bitstreamSwitching="true" lang="en" mimeType="audio/mp4">
+      <ContentProtection cenc:default_KID="30efa0b1-f8b5-53c6-5d64-db0c143395b6" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <ContentProtection schemeIdUri="urn:mpeg:drmtdoday:cenc:2014" value="DRMtoday" drmtoday:assetId="JONTEST012" drmtoday:variantId=""/>
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAUHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADAIARIQMO+gsfi1U8ZdZNsMFDOVthoIY2FzdGxhYnMiEDDvoLH4tVPGXWTbDBQzlbY=</cenc:pssh>
+      </ContentProtection>
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <SegmentTemplate media="$RepresentationID$/media-$Time$.mp4" initialization="$RepresentationID$/init.mp4" timescale="48000">
+        <SegmentTimeline>
+          <S d="720896" t="0"/>
+          <S d="719872" t="720896"/>
+          <S d="719872" t="1440768"/>
+          <S d="719872" t="2160640"/>
+          <S d="2624" t="2880512"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation codecs="mp4a.40.2" audioSamplingRate="48000" bandwidth="127800" id="JONTEST012_AV-00-00-00-50_2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+      <Representation codecs="mp4a.40.2" audioSamplingRate="48000" bandwidth="127800" id="JONTEST012_AV-00-00-00-51_2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+      <Representation codecs="mp4a.40.2" audioSamplingRate="48000" bandwidth="127800" id="JONTEST012_AV-00-00-00-52_2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet segmentAlignment="true" subsegmentAlignment="true" subsegmentStartsWithSAP="1" startWithSAP="1" bitstreamSwitching="true" lang="en" mimeType="video/mp4" maxFrameRate="23976/1000" maxWidth="768" maxHeight="432" par="16:9">
+      <ContentProtection cenc:default_KID="30efa0b1-f8b5-53c6-5d64-db0c143395b6" schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc"/>
+      <ContentProtection schemeIdUri="urn:mpeg:drmtdoday:cenc:2014" value="DRMtoday" drmtoday:assetId="JONTEST012" drmtoday:variantId=""/>
+      <ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed">
+        <cenc:pssh>AAAAUHBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADAIARIQMO+gsfi1U8ZdZNsMFDOVthoIY2FzdGxhYnMiEDDvoLH4tVPGXWTbDBQzlbY=</cenc:pssh>
+      </ContentProtection>
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+      <SegmentTemplate media="$RepresentationID$/media-$Time$.mp4" initialization="$RepresentationID$/init.mp4" timescale="11988">
+        <SegmentTimeline>
+          <S d="48000" t="399"/>
+          <S d="48000" t="48399"/>
+          <S d="48000" t="96399"/>
+          <S d="48000" t="144399"/>
+          <S d="48000" t="192399"/>
+          <S d="48000" t="240399"/>
+          <S d="48000" t="288399"/>
+          <S d="48000" t="336399"/>
+          <S d="48000" t="384399"/>
+          <S d="48000" t="432399"/>
+          <S d="48000" t="480399"/>
+          <S d="48000" t="528399"/>
+          <S d="48000" t="576399"/>
+          <S d="48000" t="624399"/>
+          <S d="48000" t="672399"/>
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation codecs="avc1.4d401e" width="256" height="144" frameRate="23976/1000" sar="1:1" bandwidth="346400" id="JONTEST012_AV-00-00-00-50"/>
+      <Representation codecs="avc1.4d401e" width="768" height="432" frameRate="23976/1000" sar="1:1" bandwidth="403900" id="JONTEST012_AV-00-00-00-51"/>
+      <Representation codecs="avc1.4d401e" width="768" height="432" frameRate="23976/1000" sar="1:1" bandwidth="610700" id="JONTEST012_AV-00-00-00-52"/>
+    </AdaptationSet>
+    <AdaptationSet mimeType="application/ttml+xml" lang="en">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="xml0" bandwidth="128">
+        <BaseURL>xml0.xml</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet mimeType="application/ttml+xml" lang="en">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="xml1" bandwidth="128">
+        <BaseURL>xml1.xml</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet mimeType="application/ttml+xml" lang="en">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="xml2" bandwidth="128">
+        <BaseURL>xml2.xml</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet mimeType="application/ttml+xml" lang="es">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="SourceFile_ES_S1_Ep101" bandwidth="128">
+        <BaseURL>SourceFile_ES_S1_Ep101.xml</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet mimeType="text/vtt" lang="fr">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="vtt0" bandwidth="128">
+        <BaseURL>vtt0.vtt</BaseURL>
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet mimeType="text/vtt" lang="fr">
+      <Role schemeIdUri="urn:mpeg:dash:role" value="subtitle"/>
+      <Representation id="vtt1" bandwidth="128">
+        <BaseURL>vtt1.vtt</BaseURL>
+      </Representation>
+    </AdaptationSet>
+  </Period>
+</MPD>
